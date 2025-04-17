@@ -42,7 +42,7 @@ The table below describes the parameters for USPET. The bolded default values ar
 | pca | integer (**5**) or None, the number of principal components |
 | location_weight | float (**0.2**), a value between (inclusive) 0 and 1 indicating how much weight to put on location vs similarity of TACs. Value 0 means that location is not considered at all. |
 | do_log | boolean (**True**), defines if log transformation should be made (usually a good idea) |
-| method | string (**gmm**),  "gmm" or "k-means" defines the actual clustering method |
+| method | string (**"gmm"**),  "gmm" or "k-means" defines the actual clustering method |
 
 ### Citation
 If you use USPET in your research, please cite the original paper: FILL WHEN THE MANUSCRIPT IS ACCEPTED
