@@ -36,7 +36,7 @@ The table below describes the parameters for USPET. The bolded default values ar
 | -------- | ----------- |
 | image | 4D array, contains the actual dynamic image |
 | clusters | integer (**100**), the number of segments to make (if do_cc is True, this will not be final) |
-| extract_foreground | several options, indicates which voxels to use for segmentation, should be either <br>3D array (mask corresponding to the physical dimensions of the image,<br>2D array (foreground voxels as rows, x, y, and z coordinates as three cols),<br>**"auto"** (automatically detexts the foreground voxels),<br>False (all voxels are used, don't use this, it is super slow).  |
+| extract_foreground | several options, indicates which voxels to use for segmentation, should be either <br>3D array (mask corresponding to the physical dimensions of the image,<br>2D array (foreground voxels as rows, x, y, and z coordinates as three cols),<br>**"auto"** (automatically detects the foreground voxels),<br>False (all voxels are used, don't use this, it is super slow).  |
 | do_cc | boolean (**True**), defines if the output clusters should be broken into connected components |
 | min_size | integer (**30**), defines how small segments are allowed |
 | pca | integer (**5**) or None, the number of principal components |
