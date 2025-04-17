@@ -17,9 +17,15 @@ segments = uspet(image)
 
 and the obtained segmentation can be saved in a nifti format like this:
 
- ```python
+```python
 nii_img = nib.Nifti1Image(segments, np.eye(4))
 nib.save(nii_img, "path/to/my/segmented/pet/pet_segmented.nii")
+```
+
+or alternatively in numpy format (does not open nicely in most image viewer softwares, but convenient for further analyses in Python) like this:
+
+```python
+np.save(segments, "path/to/my/segmented/pet/pet_segmented.npy")
 ```
 
 ### Arguments
