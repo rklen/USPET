@@ -2,7 +2,7 @@
 
 USPET is an automatic segmentation method designed for dynamic PET images. It is computationally light enough for analysing modern images with large field-of-view covering tens of millions of voxels. As a robust unsupervised general-purpose method, it can be applied on images scanned using any radiotracer, covering any area of the body, and representing any organism (human, mouse etc.).
 
-USPET uses following packages: sys, scipy, numba, numpy, sklearn, cc3d, scipy, datetime. The main function call is
+USPET uses following packages: sys, scipy, numba, numpy, sklearn, cc3d, datetime. The main function call is
 
 `uspet(image, clusters=100, extract_foreground="auto", do_cc=True, min_size=30, pca=5, location_weight=0.2, do_log=True, method="gmm")`
 
