@@ -25,7 +25,7 @@ nib.save(nii_img, "path/to/my/segmented/pet/pet_segmented.nii")
 or alternatively in numpy format (does not open nicely in most image viewer softwares, but convenient for further analyses in Python) like this:
 
 ```python
-np.save(segments, "path/to/my/segmented/pet/pet_segmented.npy")
+np.save("path/to/my/segmented/pet/pet_segmented.npy", segments)
 ```
 
 ### Arguments
