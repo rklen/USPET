@@ -8,10 +8,10 @@ uspet(image, clusters=100, extract_foreground="auto", do_cc=True, min_size=30, p
 
 where the only mandatory argument image is a 4D array containing the original dynamic image. It can be loaded for example from a .nii file using package nibabel like this:
 
-import nibabel as nib
+´´´import nibabel as nib
 
 image = nib.load("path/to/my/pet/image/pet.nii").get_fdata()
-segments = uspet(image)
+segments = uspet(image)´´´
 
 and the obtained segmentation can be saved in a nifti format like this:
 
